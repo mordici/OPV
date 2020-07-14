@@ -1,23 +1,6 @@
-﻿'
-' Created by SharpDevelop.
-' User: USER
-' Date: 10.07.2020
-' Time: 17:28
-' 
-' To change this template use Tools | Options | Coding | Edit Standard Headers.
-'
-Partial Class MainForm
+﻿Partial Class MainForm
 	Inherits System.Windows.Forms.Form
-	
-	''' <summary>
-	''' Designer variable used to keep track of non-visual components.
-	''' </summary>
 	Private components As System.ComponentModel.IContainer
-	
-	''' <summary>
-	''' Disposes resources used by the form.
-	''' </summary>
-	''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
 	Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 		If disposing Then
 			If components IsNot Nothing Then
@@ -26,12 +9,6 @@ Partial Class MainForm
 		End If
 		MyBase.Dispose(disposing)
 	End Sub
-	
-	''' <summary>
-	''' This method is required for Windows Forms designer support.
-	''' Do not change the method contents inside the source code editor. The Forms designer might
-	''' not be able to load this method if it was changed manually.
-	''' </summary>
 	Private Sub InitializeComponent()
 		Me.components = New System.ComponentModel.Container()
 		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
@@ -426,7 +403,7 @@ Partial Class MainForm
 		'notifyIcon1
 		'
 		Me.notifyIcon1.Icon = CType(resources.GetObject("notifyIcon1.Icon"),System.Drawing.Icon)
-		Me.notifyIcon1.Text = "OPV 0.1"
+		Me.notifyIcon1.Text = "OPV 0.2"
 		'
 		'timer1
 		'
