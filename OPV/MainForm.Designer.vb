@@ -33,13 +33,20 @@ Partial Class MainForm
 	''' not be able to load this method if it was changed manually.
 	''' </summary>
 	Private Sub InitializeComponent()
+		Me.components = New System.ComponentModel.Container()
 		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
 		Me.toolStrip1 = New System.Windows.Forms.ToolStrip()
+		Me.toolStripButton3 = New System.Windows.Forms.ToolStripButton()
 		Me.toolStripButton1 = New System.Windows.Forms.ToolStripButton()
 		Me.toolStripButton2 = New System.Windows.Forms.ToolStripButton()
+		Me.toolStripButton4 = New System.Windows.Forms.ToolStripButton()
 		Me.groupBox1 = New System.Windows.Forms.GroupBox()
+		Me.textBox5 = New System.Windows.Forms.TextBox()
+		Me.textBox7 = New System.Windows.Forms.TextBox()
+		Me.label14 = New System.Windows.Forms.Label()
 		Me.textBox9 = New System.Windows.Forms.TextBox()
 		Me.textBox8 = New System.Windows.Forms.TextBox()
+		Me.label7 = New System.Windows.Forms.Label()
 		Me.textBox4 = New System.Windows.Forms.TextBox()
 		Me.label4 = New System.Windows.Forms.Label()
 		Me.textBox3 = New System.Windows.Forms.TextBox()
@@ -67,30 +74,31 @@ Partial Class MainForm
 		Me.button3 = New System.Windows.Forms.Button()
 		Me.textBox10 = New System.Windows.Forms.TextBox()
 		Me.label8 = New System.Windows.Forms.Label()
-		Me.groupBox4 = New System.Windows.Forms.GroupBox()
-		Me.textBox7 = New System.Windows.Forms.TextBox()
-		Me.label7 = New System.Windows.Forms.Label()
-		Me.textBox6 = New System.Windows.Forms.TextBox()
-		Me.label6 = New System.Windows.Forms.Label()
-		Me.button2 = New System.Windows.Forms.Button()
-		Me.textBox5 = New System.Windows.Forms.TextBox()
-		Me.label5 = New System.Windows.Forms.Label()
-		Me.toolStripButton3 = New System.Windows.Forms.ToolStripButton()
+		Me.notifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+		Me.timer1 = New System.Windows.Forms.Timer(Me.components)
 		Me.toolStrip1.SuspendLayout
 		Me.groupBox1.SuspendLayout
 		Me.groupBox2.SuspendLayout
 		Me.groupBox3.SuspendLayout
-		Me.groupBox4.SuspendLayout
 		Me.SuspendLayout
 		'
 		'toolStrip1
 		'
-		Me.toolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripButton3, Me.toolStripButton1, Me.toolStripButton2})
+		Me.toolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripButton3, Me.toolStripButton1, Me.toolStripButton2, Me.toolStripButton4})
 		Me.toolStrip1.Location = New System.Drawing.Point(0, 0)
 		Me.toolStrip1.Name = "toolStrip1"
-		Me.toolStrip1.Size = New System.Drawing.Size(415, 25)
+		Me.toolStrip1.Size = New System.Drawing.Size(413, 25)
 		Me.toolStrip1.TabIndex = 0
 		Me.toolStrip1.Text = "toolStrip1"
+		'
+		'toolStripButton3
+		'
+		Me.toolStripButton3.Image = CType(resources.GetObject("toolStripButton3.Image"),System.Drawing.Image)
+		Me.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
+		Me.toolStripButton3.Name = "toolStripButton3"
+		Me.toolStripButton3.Size = New System.Drawing.Size(102, 22)
+		Me.toolStripButton3.Text = "О программе"
+		AddHandler Me.toolStripButton3.Click, AddressOf Me.ToolStripButton3Click
 		'
 		'toolStripButton1
 		'
@@ -110,10 +118,23 @@ Partial Class MainForm
 		Me.toolStripButton2.Text = "Закрыть"
 		AddHandler Me.toolStripButton2.Click, AddressOf Me.ToolStripButton2Click
 		'
+		'toolStripButton4
+		'
+		Me.toolStripButton4.Image = CType(resources.GetObject("toolStripButton4.Image"),System.Drawing.Image)
+		Me.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+		Me.toolStripButton4.Name = "toolStripButton4"
+		Me.toolStripButton4.Size = New System.Drawing.Size(99, 22)
+		Me.toolStripButton4.Text = "Дата и время"
+		AddHandler Me.toolStripButton4.Click, AddressOf Me.ToolStripButton4Click
+		'
 		'groupBox1
 		'
+		Me.groupBox1.Controls.Add(Me.textBox5)
+		Me.groupBox1.Controls.Add(Me.textBox7)
+		Me.groupBox1.Controls.Add(Me.label14)
 		Me.groupBox1.Controls.Add(Me.textBox9)
 		Me.groupBox1.Controls.Add(Me.textBox8)
+		Me.groupBox1.Controls.Add(Me.label7)
 		Me.groupBox1.Controls.Add(Me.textBox4)
 		Me.groupBox1.Controls.Add(Me.label4)
 		Me.groupBox1.Controls.Add(Me.textBox3)
@@ -125,10 +146,32 @@ Partial Class MainForm
 		Me.groupBox1.Controls.Add(Me.label1)
 		Me.groupBox1.Location = New System.Drawing.Point(0, 28)
 		Me.groupBox1.Name = "groupBox1"
-		Me.groupBox1.Size = New System.Drawing.Size(205, 187)
+		Me.groupBox1.Size = New System.Drawing.Size(411, 187)
 		Me.groupBox1.TabIndex = 1
 		Me.groupBox1.TabStop = false
 		Me.groupBox1.Text = "Кальций, магний"
+		'
+		'textBox5
+		'
+		Me.textBox5.Location = New System.Drawing.Point(212, 78)
+		Me.textBox5.Name = "textBox5"
+		Me.textBox5.Size = New System.Drawing.Size(108, 20)
+		Me.textBox5.TabIndex = 11
+		'
+		'textBox7
+		'
+		Me.textBox7.Location = New System.Drawing.Point(212, 38)
+		Me.textBox7.Name = "textBox7"
+		Me.textBox7.Size = New System.Drawing.Size(108, 20)
+		Me.textBox7.TabIndex = 7
+		'
+		'label14
+		'
+		Me.label14.Location = New System.Drawing.Point(211, 61)
+		Me.label14.Name = "label14"
+		Me.label14.Size = New System.Drawing.Size(123, 23)
+		Me.label14.TabIndex = 8
+		Me.label14.Text = "Жесткость (мг/л)"
 		'
 		'textBox9
 		'
@@ -143,6 +186,14 @@ Partial Class MainForm
 		Me.textBox8.Name = "textBox8"
 		Me.textBox8.Size = New System.Drawing.Size(76, 20)
 		Me.textBox8.TabIndex = 9
+		'
+		'label7
+		'
+		Me.label7.Location = New System.Drawing.Point(211, 16)
+		Me.label7.Name = "label7"
+		Me.label7.Size = New System.Drawing.Size(123, 23)
+		Me.label7.TabIndex = 6
+		Me.label7.Text = "Жесткость (ммоль/л)"
 		'
 		'textBox4
 		'
@@ -228,7 +279,7 @@ Partial Class MainForm
 		Me.groupBox2.Controls.Add(Me.label10)
 		Me.groupBox2.Location = New System.Drawing.Point(211, 221)
 		Me.groupBox2.Name = "groupBox2"
-		Me.groupBox2.Size = New System.Drawing.Size(200, 190)
+		Me.groupBox2.Size = New System.Drawing.Size(200, 181)
 		Me.groupBox2.TabIndex = 2
 		Me.groupBox2.TabStop = false
 		Me.groupBox2.Text = "Аммиак"
@@ -320,7 +371,7 @@ Partial Class MainForm
 		Me.groupBox3.Controls.Add(Me.label8)
 		Me.groupBox3.Location = New System.Drawing.Point(0, 221)
 		Me.groupBox3.Name = "groupBox3"
-		Me.groupBox3.Size = New System.Drawing.Size(205, 190)
+		Me.groupBox3.Size = New System.Drawing.Size(205, 181)
 		Me.groupBox3.TabIndex = 3
 		Me.groupBox3.TabStop = false
 		Me.groupBox3.Text = "Мутность"
@@ -372,92 +423,21 @@ Partial Class MainForm
 		Me.label8.TabIndex = 0
 		Me.label8.Text = "Введите мутность в NTU"
 		'
-		'groupBox4
+		'notifyIcon1
 		'
-		Me.groupBox4.Controls.Add(Me.textBox7)
-		Me.groupBox4.Controls.Add(Me.label7)
-		Me.groupBox4.Controls.Add(Me.textBox6)
-		Me.groupBox4.Controls.Add(Me.label6)
-		Me.groupBox4.Controls.Add(Me.button2)
-		Me.groupBox4.Controls.Add(Me.textBox5)
-		Me.groupBox4.Controls.Add(Me.label5)
-		Me.groupBox4.Location = New System.Drawing.Point(211, 28)
-		Me.groupBox4.Name = "groupBox4"
-		Me.groupBox4.Size = New System.Drawing.Size(200, 187)
-		Me.groupBox4.TabIndex = 9
-		Me.groupBox4.TabStop = false
-		Me.groupBox4.Text = "°dH (deutsche Härte)"
+		Me.notifyIcon1.Icon = CType(resources.GetObject("notifyIcon1.Icon"),System.Drawing.Icon)
+		Me.notifyIcon1.Text = "OPV 0.1"
 		'
-		'textBox7
+		'timer1
 		'
-		Me.textBox7.Location = New System.Drawing.Point(7, 118)
-		Me.textBox7.Name = "textBox7"
-		Me.textBox7.Size = New System.Drawing.Size(108, 20)
-		Me.textBox7.TabIndex = 7
-		'
-		'label7
-		'
-		Me.label7.Location = New System.Drawing.Point(6, 101)
-		Me.label7.Name = "label7"
-		Me.label7.Size = New System.Drawing.Size(123, 23)
-		Me.label7.TabIndex = 6
-		Me.label7.Text = "Жесткость (ммоль/л)"
-		'
-		'textBox6
-		'
-		Me.textBox6.Location = New System.Drawing.Point(6, 78)
-		Me.textBox6.Name = "textBox6"
-		Me.textBox6.Size = New System.Drawing.Size(109, 20)
-		Me.textBox6.TabIndex = 5
-		'
-		'label6
-		'
-		Me.label6.Location = New System.Drawing.Point(6, 58)
-		Me.label6.Name = "label6"
-		Me.label6.Size = New System.Drawing.Size(123, 23)
-		Me.label6.TabIndex = 4
-		Me.label6.Text = "Жесткость (dH)"
-		'
-		'button2
-		'
-		Me.button2.Location = New System.Drawing.Point(117, 33)
-		Me.button2.Name = "button2"
-		Me.button2.Size = New System.Drawing.Size(75, 23)
-		Me.button2.TabIndex = 3
-		Me.button2.Text = "Подсчет"
-		Me.button2.UseVisualStyleBackColor = true
-		AddHandler Me.button2.Click, AddressOf Me.Button2Click
-		'
-		'textBox5
-		'
-		Me.textBox5.Location = New System.Drawing.Point(6, 35)
-		Me.textBox5.Name = "textBox5"
-		Me.textBox5.Size = New System.Drawing.Size(109, 20)
-		Me.textBox5.TabIndex = 2
-		'
-		'label5
-		'
-		Me.label5.Location = New System.Drawing.Point(6, 16)
-		Me.label5.Name = "label5"
-		Me.label5.Size = New System.Drawing.Size(109, 23)
-		Me.label5.TabIndex = 1
-		Me.label5.Text = "Количество каплей"
-		'
-		'toolStripButton3
-		'
-		Me.toolStripButton3.Image = CType(resources.GetObject("toolStripButton3.Image"),System.Drawing.Image)
-		Me.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
-		Me.toolStripButton3.Name = "toolStripButton3"
-		Me.toolStripButton3.Size = New System.Drawing.Size(102, 22)
-		Me.toolStripButton3.Text = "О программе"
-		AddHandler Me.toolStripButton3.Click, AddressOf Me.ToolStripButton3Click
+		Me.timer1.Interval = 5500
+		AddHandler Me.timer1.Tick, AddressOf Me.Timer1Tick
 		'
 		'MainForm
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.ClientSize = New System.Drawing.Size(415, 414)
-		Me.Controls.Add(Me.groupBox4)
+		Me.ClientSize = New System.Drawing.Size(413, 405)
 		Me.Controls.Add(Me.groupBox3)
 		Me.Controls.Add(Me.groupBox2)
 		Me.Controls.Add(Me.groupBox1)
@@ -474,11 +454,13 @@ Partial Class MainForm
 		Me.groupBox2.PerformLayout
 		Me.groupBox3.ResumeLayout(false)
 		Me.groupBox3.PerformLayout
-		Me.groupBox4.ResumeLayout(false)
-		Me.groupBox4.PerformLayout
 		Me.ResumeLayout(false)
 		Me.PerformLayout
 	End Sub
+	Private timer1 As System.Windows.Forms.Timer
+	Private notifyIcon1 As System.Windows.Forms.NotifyIcon
+	Private label14 As System.Windows.Forms.Label
+	Private toolStripButton4 As System.Windows.Forms.ToolStripButton
 	Private toolStripButton3 As System.Windows.Forms.ToolStripButton
 	Private textBox17 As System.Windows.Forms.TextBox
 	Private label13 As System.Windows.Forms.Label
@@ -498,14 +480,9 @@ Partial Class MainForm
 	Private label8 As System.Windows.Forms.Label
 	Private textBox8 As System.Windows.Forms.TextBox
 	Private textBox9 As System.Windows.Forms.TextBox
-	Private label5 As System.Windows.Forms.Label
 	Private textBox5 As System.Windows.Forms.TextBox
-	Private button2 As System.Windows.Forms.Button
-	Private label6 As System.Windows.Forms.Label
-	Private textBox6 As System.Windows.Forms.TextBox
 	Private label7 As System.Windows.Forms.Label
 	Private textBox7 As System.Windows.Forms.TextBox
-	Private groupBox4 As System.Windows.Forms.GroupBox
 	Private groupBox3 As System.Windows.Forms.GroupBox
 	Private groupBox2 As System.Windows.Forms.GroupBox
 	Private toolStripButton2 As System.Windows.Forms.ToolStripButton
@@ -521,4 +498,8 @@ Partial Class MainForm
 	Private textBox4 As System.Windows.Forms.TextBox
 	Private groupBox1 As System.Windows.Forms.GroupBox
 	Private toolStrip1 As System.Windows.Forms.ToolStrip
+	
+	Sub Timer1Tick(sender As Object, e As EventArgs)
+		notifyIcon1.Visible = False		
+	End Sub
 End Class
