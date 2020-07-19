@@ -12,8 +12,6 @@
 		f = b * 50.05
 		textBox2.Text = b
 		textBox3.Text = c
-		textBox7.Text = mml
-		textbox5.Text = f
 		If c > 100 Then
 			textBox8.Text = "Превышение"
 			textBox8.BackColor = System.Drawing.Color.Red
@@ -30,7 +28,7 @@
 			textBox9.BackColor = System.Drawing.Color.LimeGreen
 		End If
 		timer1.Start()
-		notifyIcon1.BalloonTipTitle = "WinOPV 0.1"
+		notifyIcon1.BalloonTipTitle = "WinOPV 0.2"
 		notifyIcon1.BalloonTipText = "Подсчет выполнен"
 		notifyIcon1.Visible = True
 		notifyIcon1.ShowBalloonTip(0)
@@ -75,7 +73,7 @@
 			textBox17.BackColor = System.Drawing.Color.LimeGreen
 		End If
 		timer1.Start()
-		notifyIcon1.BalloonTipTitle = "WinOPV 0.1"
+		notifyIcon1.BalloonTipTitle = "WinOPV 0.2"
 		notifyIcon1.BalloonTipText = "Подсчет выполнен"
 		notifyIcon1.Visible = True
 		notifyIcon1.ShowBalloonTip(0)
@@ -161,7 +159,7 @@
 		d = 14 - a
 		textBox16.Text = d
 		timer1.Start()
-		notifyIcon1.BalloonTipTitle = "WinOPV 0.1"
+		notifyIcon1.BalloonTipTitle = "WinOPV 0.2"
 		notifyIcon1.BalloonTipText = "Подсчет выполнен"
 		notifyIcon1.Visible = True
 		notifyIcon1.ShowBalloonTip(0)
@@ -170,9 +168,22 @@
 	Sub ToolStripButton3Click(sender As Object, e As EventArgs)
 		MsgBox("Программа для определения качества воды. Написана на Visual Basic .NET Framework 4. Автор - Гиль Александр")		
 	End Sub
-	
-	Sub ToolStripButton4Click(sender As Object, e As EventArgs)
-		MsgBox(Now.ToLongDateString())
-		MsgBox(TimeOfDay)
+
+	Sub Button2Click(sender As Object, e As EventArgs)
+		Dim a As String, b As String
+		a = textBox5.Text
+		b = a * 17.85
+		textbox6.Text = b
+		If b > 400 Then
+			textBox7.Text = "Превышение"
+			textBox7.BackColor = System.Drawing.Color.Red
+		Else
+			textBox7.Text = "Норма"
+			textBox7.BackColor = System.Drawing.Color.LimeGreen
+		End If
+		notifyIcon1.BalloonTipTitle = "WinOPV 0.2"
+		notifyIcon1.BalloonTipText = "Подсчет выполнен"
+		notifyIcon1.Visible = True
+		notifyIcon1.ShowBalloonTip(0)
 	End Sub
 End Class
