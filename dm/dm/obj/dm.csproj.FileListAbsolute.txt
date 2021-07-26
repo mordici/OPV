@@ -1,0 +1,10 @@
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\dm\dm\obj\Debug\dm.exe
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\dm\dm\obj\Debug\dm.pdb
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\dm\dm\bin\Debug\dm.exe
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\dm\dm\bin\Debug\dm.pdb
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\dm\dm\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\dm\dm\obj\Debug\dm.Form1.resources
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\dm\dm\obj\Debug\dm.Properties.Resources.resources
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\dm\dm\obj\Debug\dm.csproj.GenerateResource.Cache
+D:\Projects\dm\dm\obj\Debug\dm.exe
+D:\Projects\dm\dm\obj\Debug\dm.pdb
