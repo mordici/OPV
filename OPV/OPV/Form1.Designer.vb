@@ -22,6 +22,7 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.groupBox1 = New System.Windows.Forms.GroupBox
+        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel
         Me.button7 = New System.Windows.Forms.Button
         Me.button5 = New System.Windows.Forms.Button
         Me.textBox9 = New System.Windows.Forms.TextBox
@@ -39,11 +40,16 @@ Partial Class Form1
         Me.button9 = New System.Windows.Forms.Button
         Me.textBox6 = New System.Windows.Forms.TextBox
         Me.toolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel
+        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel
         Me.menuStrip1 = New System.Windows.Forms.MenuStrip
         Me.файлToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.очиститьПоляToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.сохранитьВФайлToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.открытьФайлАнализаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.СтеретьФайлАнализаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.единицыToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.немецкийГрадусToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.французскийГрадусToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
@@ -58,8 +64,8 @@ Partial Class Form1
         Me.информацияToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.оПрограммеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.беларускаяМоваToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.українськаМоваToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.belaruskaäMovalacinkaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.українськаМоваToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.englishToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.русскийЯзыкToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.закрытьToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -102,16 +108,68 @@ Partial Class Form1
         Me.button3 = New System.Windows.Forms.Button
         Me.textBox10 = New System.Windows.Forms.TextBox
         Me.label8 = New System.Windows.Forms.Label
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox
+        Me.TextBox16 = New System.Windows.Forms.TextBox
+        Me.Label18 = New System.Windows.Forms.Label
+        Me.Button6 = New System.Windows.Forms.Button
+        Me.Label17 = New System.Windows.Forms.Label
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
+        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel
+        Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel
+        Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox
+        Me.TextBox26 = New System.Windows.Forms.TextBox
+        Me.CheckBox9 = New System.Windows.Forms.CheckBox
+        Me.TextBox25 = New System.Windows.Forms.TextBox
+        Me.CheckBox8 = New System.Windows.Forms.CheckBox
+        Me.TextBox24 = New System.Windows.Forms.TextBox
+        Me.TextBox23 = New System.Windows.Forms.TextBox
+        Me.CheckBox7 = New System.Windows.Forms.CheckBox
+        Me.CheckBox6 = New System.Windows.Forms.CheckBox
+        Me.TextBox22 = New System.Windows.Forms.TextBox
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox
+        Me.TextBox21 = New System.Windows.Forms.TextBox
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox
+        Me.TextBox20 = New System.Windows.Forms.TextBox
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox
+        Me.TextBox19 = New System.Windows.Forms.TextBox
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox
+        Me.Label19 = New System.Windows.Forms.Label
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox
+        Me.TextBox18 = New System.Windows.Forms.TextBox
+        Me.Label20 = New System.Windows.Forms.Label
+        Me.TextBox27 = New System.Windows.Forms.TextBox
+        Me.Button8 = New System.Windows.Forms.Button
+        Me.GroupBox9 = New System.Windows.Forms.GroupBox
+        Me.ComboBox6 = New System.Windows.Forms.ComboBox
+        Me.Label27 = New System.Windows.Forms.Label
+        Me.Label26 = New System.Windows.Forms.Label
+        Me.TextBox30 = New System.Windows.Forms.TextBox
+        Me.Label25 = New System.Windows.Forms.Label
+        Me.Button14 = New System.Windows.Forms.Button
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox
+        Me.Label22 = New System.Windows.Forms.Label
+        Me.TextBox28 = New System.Windows.Forms.TextBox
+        Me.Label21 = New System.Windows.Forms.Label
         Me.groupBox1.SuspendLayout()
         Me.menuStrip1.SuspendLayout()
         Me.groupBox5.SuspendLayout()
         Me.groupBox4.SuspendLayout()
         Me.groupBox2.SuspendLayout()
         Me.groupBox3.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip1.SuspendLayout()
+        Me.GroupBox7.SuspendLayout()
+        Me.GroupBox8.SuspendLayout()
+        Me.GroupBox9.SuspendLayout()
         Me.SuspendLayout()
         '
         'groupBox1
         '
+        Me.groupBox1.Controls.Add(Me.LinkLabel5)
         Me.groupBox1.Controls.Add(Me.button7)
         Me.groupBox1.Controls.Add(Me.button5)
         Me.groupBox1.Controls.Add(Me.textBox9)
@@ -130,7 +188,20 @@ Partial Class Form1
         Me.groupBox1.Size = New System.Drawing.Size(205, 187)
         Me.groupBox1.TabIndex = 20
         Me.groupBox1.TabStop = False
-        Me.groupBox1.Text = "Кальций, магний"
+        Me.groupBox1.Text = "Кальций, магний (5 мл)"
+        '
+        'LinkLabel5
+        '
+        Me.LinkLabel5.AutoSize = True
+        Me.LinkLabel5.Location = New System.Drawing.Point(129, 0)
+        Me.LinkLabel5.Name = "LinkLabel5"
+        Me.LinkLabel5.Size = New System.Drawing.Size(73, 13)
+        Me.LinkLabel5.TabIndex = 22
+        Me.LinkLabel5.TabStop = True
+        Me.LinkLabel5.Text = "Информация"
+        Me.toolTip1.SetToolTip(Me.LinkLabel5, "Требуются реактивы НИЛПА. Кол-во капель реактива Требуются реактивы НИЛПА. Кол-во" & _
+                " капель реактива " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "до желтого цвета обозначает жесткость в нем. гр." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "!!ВНИМАНИЕ!" & _
+                "! Работает только при 5 мл анализ.воды")
         '
         'button7
         '
@@ -270,19 +341,64 @@ Partial Class Form1
         Me.toolTip1.OwnerDraw = True
         Me.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info
         '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(123, 82)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(73, 13)
+        Me.LinkLabel1.TabIndex = 0
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Информация"
+        Me.toolTip1.SetToolTip(Me.LinkLabel1, resources.GetString("LinkLabel1.ToolTip"))
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Location = New System.Drawing.Point(171, 2)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(73, 13)
+        Me.LinkLabel2.TabIndex = 14
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "Информация"
+        Me.toolTip1.SetToolTip(Me.LinkLabel2, "По данным из таблицы нахождения аммиака в" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "воде с помощью реактивов НИЛПА.")
+        '
+        'LinkLabel3
+        '
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.Location = New System.Drawing.Point(171, 0)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(73, 13)
+        Me.LinkLabel3.TabIndex = 17
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "Информация"
+        Me.toolTip1.SetToolTip(Me.LinkLabel3, "Индекс загрязнения воды родника.")
+        '
+        'LinkLabel4
+        '
+        Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.Location = New System.Drawing.Point(171, 3)
+        Me.LinkLabel4.Name = "LinkLabel4"
+        Me.LinkLabel4.Size = New System.Drawing.Size(73, 13)
+        Me.LinkLabel4.TabIndex = 21
+        Me.LinkLabel4.TabStop = True
+        Me.LinkLabel4.Text = "Информация"
+        Me.toolTip1.SetToolTip(Me.LinkLabel4, "Требуются реактивы НИЛПА. Кол-во капель реактива Требуются реактивы НИЛПА. Кол-во" & _
+                " капель реактива " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "до желтого цвета обозначает жесткость в нем. гр.")
+        '
         'menuStrip1
         '
         Me.menuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.файлToolStripMenuItem, Me.единицыToolStripMenuItem, Me.сервисToolStripMenuItem, Me.оПрограммеToolStripMenuItem, Me.закрытьToolStripMenuItem})
         Me.menuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.menuStrip1.Name = "menuStrip1"
         Me.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.menuStrip1.Size = New System.Drawing.Size(452, 24)
+        Me.menuStrip1.Size = New System.Drawing.Size(629, 24)
         Me.menuStrip1.TabIndex = 24
         Me.menuStrip1.Text = "menuStrip1"
         '
         'файлToolStripMenuItem
         '
-        Me.файлToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.очиститьПоляToolStripMenuItem, Me.сохранитьВФайлToolStripMenuItem1, Me.открытьФайлАнализаToolStripMenuItem})
+        Me.файлToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.очиститьПоляToolStripMenuItem, Me.сохранитьВФайлToolStripMenuItem1, Me.открытьФайлАнализаToolStripMenuItem, Me.СтеретьФайлАнализаToolStripMenuItem})
         Me.файлToolStripMenuItem.Image = CType(resources.GetObject("файлToolStripMenuItem.Image"), System.Drawing.Image)
         Me.файлToolStripMenuItem.Name = "файлToolStripMenuItem"
         Me.файлToolStripMenuItem.Size = New System.Drawing.Size(64, 20)
@@ -308,6 +424,13 @@ Partial Class Form1
         Me.открытьФайлАнализаToolStripMenuItem.Name = "открытьФайлАнализаToolStripMenuItem"
         Me.открытьФайлАнализаToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
         Me.открытьФайлАнализаToolStripMenuItem.Text = "Открыть файл анализа"
+        '
+        'СтеретьФайлАнализаToolStripMenuItem
+        '
+        Me.СтеретьФайлАнализаToolStripMenuItem.Image = CType(resources.GetObject("СтеретьФайлАнализаToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.СтеретьФайлАнализаToolStripMenuItem.Name = "СтеретьФайлАнализаToolStripMenuItem"
+        Me.СтеретьФайлАнализаToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
+        Me.СтеретьФайлАнализаToolStripMenuItem.Text = "Стереть файл анализа"
         '
         'единицыToolStripMenuItem
         '
@@ -395,9 +518,7 @@ Partial Class Form1
         '
         'оПрограммеToolStripMenuItem
         '
-        Me.оПрограммеToolStripMenuItem.Checked = True
-        Me.оПрограммеToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.оПрограммеToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.беларускаяМоваToolStripMenuItem1, Me.українськаМоваToolStripMenuItem, Me.belaruskaäMovalacinkaToolStripMenuItem, Me.englishToolStripMenuItem1, Me.русскийЯзыкToolStripMenuItem})
+        Me.оПрограммеToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.беларускаяМоваToolStripMenuItem1, Me.belaruskaäMovalacinkaToolStripMenuItem, Me.українськаМоваToolStripMenuItem, Me.englishToolStripMenuItem1, Me.русскийЯзыкToolStripMenuItem})
         Me.оПрограммеToolStripMenuItem.Image = CType(resources.GetObject("оПрограммеToolStripMenuItem.Image"), System.Drawing.Image)
         Me.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem"
         Me.оПрограммеToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
@@ -406,31 +527,31 @@ Partial Class Form1
         'беларускаяМоваToolStripMenuItem1
         '
         Me.беларускаяМоваToolStripMenuItem1.Name = "беларускаяМоваToolStripMenuItem1"
-        Me.беларускаяМоваToolStripMenuItem1.Size = New System.Drawing.Size(211, 22)
+        Me.беларускаяМоваToolStripMenuItem1.Size = New System.Drawing.Size(308, 22)
         Me.беларускаяМоваToolStripMenuItem1.Text = "Беларуская мова"
-        '
-        'українськаМоваToolStripMenuItem
-        '
-        Me.українськаМоваToolStripMenuItem.Name = "українськаМоваToolStripMenuItem"
-        Me.українськаМоваToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
-        Me.українськаМоваToolStripMenuItem.Text = "Українська мова"
         '
         'belaruskaäMovalacinkaToolStripMenuItem
         '
         Me.belaruskaäMovalacinkaToolStripMenuItem.Name = "belaruskaäMovalacinkaToolStripMenuItem"
-        Me.belaruskaäMovalacinkaToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
-        Me.belaruskaäMovalacinkaToolStripMenuItem.Text = "Belaruskaä mova (lacinka)"
+        Me.belaruskaäMovalacinkaToolStripMenuItem.Size = New System.Drawing.Size(308, 22)
+        Me.belaruskaäMovalacinkaToolStripMenuItem.Text = "Belaruskaja mova (Morđicki dijalekt, lacinka)"
+        '
+        'українськаМоваToolStripMenuItem
+        '
+        Me.українськаМоваToolStripMenuItem.Name = "українськаМоваToolStripMenuItem"
+        Me.українськаМоваToolStripMenuItem.Size = New System.Drawing.Size(308, 22)
+        Me.українськаМоваToolStripMenuItem.Text = "Українська мова"
         '
         'englishToolStripMenuItem1
         '
         Me.englishToolStripMenuItem1.Name = "englishToolStripMenuItem1"
-        Me.englishToolStripMenuItem1.Size = New System.Drawing.Size(211, 22)
+        Me.englishToolStripMenuItem1.Size = New System.Drawing.Size(308, 22)
         Me.englishToolStripMenuItem1.Text = "English"
         '
         'русскийЯзыкToolStripMenuItem
         '
         Me.русскийЯзыкToolStripMenuItem.Name = "русскийЯзыкToolStripMenuItem"
-        Me.русскийЯзыкToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+        Me.русскийЯзыкToolStripMenuItem.Size = New System.Drawing.Size(308, 22)
         Me.русскийЯзыкToolStripMenuItem.Text = "Русский язык"
         '
         'закрытьToolStripMenuItem
@@ -451,7 +572,7 @@ Partial Class Form1
         '
         'label15
         '
-        Me.label15.Location = New System.Drawing.Point(111, 112)
+        Me.label15.Location = New System.Drawing.Point(110, 106)
         Me.label15.Name = "label15"
         Me.label15.Size = New System.Drawing.Size(100, 23)
         Me.label15.TabIndex = 7
@@ -539,6 +660,7 @@ Partial Class Form1
         '
         'groupBox4
         '
+        Me.groupBox4.Controls.Add(Me.LinkLabel4)
         Me.groupBox4.Controls.Add(Me.button10)
         Me.groupBox4.Controls.Add(Me.button9)
         Me.groupBox4.Controls.Add(Me.textBox7)
@@ -583,9 +705,9 @@ Partial Class Form1
         '
         Me.label5.Location = New System.Drawing.Point(5, 16)
         Me.label5.Name = "label5"
-        Me.label5.Size = New System.Drawing.Size(185, 23)
+        Me.label5.Size = New System.Drawing.Size(239, 23)
         Me.label5.TabIndex = 0
-        Me.label5.Text = "Кол-во капель до желтого цвета"
+        Me.label5.Text = "Кол-во капель до желтого цвета (т.е. нем.гр.)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'comboBox1
         '
@@ -622,6 +744,7 @@ Partial Class Form1
         '
         'groupBox2
         '
+        Me.groupBox2.Controls.Add(Me.LinkLabel2)
         Me.groupBox2.Controls.Add(Me.comboBox2)
         Me.groupBox2.Controls.Add(Me.comboBox1)
         Me.groupBox2.Controls.Add(Me.textBox15)
@@ -793,11 +916,442 @@ Partial Class Form1
         Me.label8.TabIndex = 0
         Me.label8.Text = "Введите мутность в NTU"
         '
+        'GroupBox6
+        '
+        Me.GroupBox6.Controls.Add(Me.TextBox16)
+        Me.GroupBox6.Controls.Add(Me.Label18)
+        Me.GroupBox6.Controls.Add(Me.Button6)
+        Me.GroupBox6.Controls.Add(Me.Label17)
+        Me.GroupBox6.Controls.Add(Me.NumericUpDown1)
+        Me.GroupBox6.Controls.Add(Me.LinkLabel1)
+        Me.GroupBox6.Location = New System.Drawing.Point(0, 365)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(206, 95)
+        Me.GroupBox6.TabIndex = 26
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "Растворенный кислород в воде"
+        '
+        'TextBox16
+        '
+        Me.TextBox16.Location = New System.Drawing.Point(6, 71)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.ReadOnly = True
+        Me.TextBox16.Size = New System.Drawing.Size(109, 20)
+        Me.TextBox16.TabIndex = 12
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(5, 55)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(86, 13)
+        Me.Label18.TabIndex = 13
+        Me.Label18.Text = "Кислород, мг/л"
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(129, 29)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(65, 23)
+        Me.Button6.TabIndex = 12
+        Me.Button6.Text = "Подсчет"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(4, 16)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(87, 13)
+        Me.Label17.TabIndex = 2
+        Me.Label17.Text = "Температура, С"
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Location = New System.Drawing.Point(6, 32)
+        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {13, 0, 0, 0})
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(117, 20)
+        Me.NumericUpDown1.TabIndex = 1
+        '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.ToolStripStatusLabel2, Me.ToolStripProgressBar1})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 542)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(629, 22)
+        Me.StatusStrip1.TabIndex = 27
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'ToolStripStatusLabel1
+        '
+        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(49, 17)
+        Me.ToolStripStatusLabel1.Text = "Статус: "
+        '
+        'ToolStripStatusLabel2
+        '
+        Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
+        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(265, 17)
+        Me.ToolStripStatusLabel2.Text = "                                                                                 " & _
+            "     "
+        '
+        'ToolStripProgressBar1
+        '
+        Me.ToolStripProgressBar1.Name = "ToolStripProgressBar1"
+        Me.ToolStripProgressBar1.Size = New System.Drawing.Size(120, 16)
+        '
+        'Timer2
+        '
+        Me.Timer2.Interval = 1
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.Controls.Add(Me.LinkLabel3)
+        Me.GroupBox7.Controls.Add(Me.TextBox26)
+        Me.GroupBox7.Controls.Add(Me.CheckBox9)
+        Me.GroupBox7.Controls.Add(Me.TextBox25)
+        Me.GroupBox7.Controls.Add(Me.CheckBox8)
+        Me.GroupBox7.Controls.Add(Me.TextBox24)
+        Me.GroupBox7.Controls.Add(Me.TextBox23)
+        Me.GroupBox7.Controls.Add(Me.CheckBox7)
+        Me.GroupBox7.Controls.Add(Me.CheckBox6)
+        Me.GroupBox7.Controls.Add(Me.TextBox22)
+        Me.GroupBox7.Controls.Add(Me.CheckBox5)
+        Me.GroupBox7.Controls.Add(Me.TextBox21)
+        Me.GroupBox7.Controls.Add(Me.CheckBox4)
+        Me.GroupBox7.Controls.Add(Me.TextBox20)
+        Me.GroupBox7.Controls.Add(Me.CheckBox3)
+        Me.GroupBox7.Controls.Add(Me.TextBox19)
+        Me.GroupBox7.Controls.Add(Me.CheckBox2)
+        Me.GroupBox7.Controls.Add(Me.Label19)
+        Me.GroupBox7.Location = New System.Drawing.Point(206, 409)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Size = New System.Drawing.Size(250, 121)
+        Me.GroupBox7.TabIndex = 28
+        Me.GroupBox7.TabStop = False
+        Me.GroupBox7.Text = "Индекс загрязнения воды"
+        '
+        'TextBox26
+        '
+        Me.TextBox26.Location = New System.Drawing.Point(143, 98)
+        Me.TextBox26.Name = "TextBox26"
+        Me.TextBox26.Size = New System.Drawing.Size(40, 20)
+        Me.TextBox26.TabIndex = 16
+        '
+        'CheckBox9
+        '
+        Me.CheckBox9.AutoSize = True
+        Me.CheckBox9.Checked = True
+        Me.CheckBox9.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox9.Location = New System.Drawing.Point(90, 101)
+        Me.CheckBox9.Name = "CheckBox9"
+        Me.CheckBox9.Size = New System.Drawing.Size(48, 17)
+        Me.CheckBox9.TabIndex = 15
+        Me.CheckBox9.Text = "NH3"
+        Me.CheckBox9.UseVisualStyleBackColor = True
+        '
+        'TextBox25
+        '
+        Me.TextBox25.Location = New System.Drawing.Point(58, 99)
+        Me.TextBox25.Name = "TextBox25"
+        Me.TextBox25.Size = New System.Drawing.Size(26, 20)
+        Me.TextBox25.TabIndex = 14
+        '
+        'CheckBox8
+        '
+        Me.CheckBox8.AutoSize = True
+        Me.CheckBox8.Checked = True
+        Me.CheckBox8.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox8.Location = New System.Drawing.Point(4, 102)
+        Me.CheckBox8.Name = "CheckBox8"
+        Me.CheckBox8.Size = New System.Drawing.Size(48, 17)
+        Me.CheckBox8.TabIndex = 13
+        Me.CheckBox8.Text = "NH4"
+        Me.CheckBox8.UseVisualStyleBackColor = True
+        '
+        'TextBox24
+        '
+        Me.TextBox24.Location = New System.Drawing.Point(138, 74)
+        Me.TextBox24.Name = "TextBox24"
+        Me.TextBox24.Size = New System.Drawing.Size(34, 20)
+        Me.TextBox24.TabIndex = 10
+        '
+        'TextBox23
+        '
+        Me.TextBox23.Location = New System.Drawing.Point(49, 75)
+        Me.TextBox23.Name = "TextBox23"
+        Me.TextBox23.Size = New System.Drawing.Size(35, 20)
+        Me.TextBox23.TabIndex = 12
+        '
+        'CheckBox7
+        '
+        Me.CheckBox7.AutoSize = True
+        Me.CheckBox7.Checked = True
+        Me.CheckBox7.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox7.Location = New System.Drawing.Point(99, 77)
+        Me.CheckBox7.Name = "CheckBox7"
+        Me.CheckBox7.Size = New System.Drawing.Size(39, 17)
+        Me.CheckBox7.TabIndex = 9
+        Me.CheckBox7.Text = "Cu"
+        Me.CheckBox7.UseVisualStyleBackColor = True
+        '
+        'CheckBox6
+        '
+        Me.CheckBox6.AutoSize = True
+        Me.CheckBox6.Checked = True
+        Me.CheckBox6.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox6.Location = New System.Drawing.Point(4, 77)
+        Me.CheckBox6.Name = "CheckBox6"
+        Me.CheckBox6.Size = New System.Drawing.Size(38, 17)
+        Me.CheckBox6.TabIndex = 11
+        Me.CheckBox6.Text = "Fe"
+        Me.CheckBox6.UseVisualStyleBackColor = True
+        '
+        'TextBox22
+        '
+        Me.TextBox22.Location = New System.Drawing.Point(58, 53)
+        Me.TextBox22.Name = "TextBox22"
+        Me.TextBox22.Size = New System.Drawing.Size(26, 20)
+        Me.TextBox22.TabIndex = 10
+        '
+        'CheckBox5
+        '
+        Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Checked = True
+        Me.CheckBox5.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox5.Location = New System.Drawing.Point(103, 51)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(47, 17)
+        Me.CheckBox5.TabIndex = 9
+        Me.CheckBox5.Text = "PO4"
+        Me.CheckBox5.UseVisualStyleBackColor = True
+        '
+        'TextBox21
+        '
+        Me.TextBox21.Location = New System.Drawing.Point(156, 51)
+        Me.TextBox21.Name = "TextBox21"
+        Me.TextBox21.Size = New System.Drawing.Size(26, 20)
+        Me.TextBox21.TabIndex = 8
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Checked = True
+        Me.CheckBox4.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox4.Location = New System.Drawing.Point(5, 55)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(48, 17)
+        Me.CheckBox4.TabIndex = 7
+        Me.CheckBox4.Text = "NO2"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'TextBox20
+        '
+        Me.TextBox20.Location = New System.Drawing.Point(58, 29)
+        Me.TextBox20.Name = "TextBox20"
+        Me.TextBox20.Size = New System.Drawing.Size(26, 20)
+        Me.TextBox20.TabIndex = 6
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Checked = True
+        Me.CheckBox3.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox3.Location = New System.Drawing.Point(6, 32)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(48, 17)
+        Me.CheckBox3.TabIndex = 5
+        Me.CheckBox3.Text = "NO3"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'TextBox19
+        '
+        Me.TextBox19.Location = New System.Drawing.Point(189, 29)
+        Me.TextBox19.Name = "TextBox19"
+        Me.TextBox19.Size = New System.Drawing.Size(32, 20)
+        Me.TextBox19.TabIndex = 4
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Checked = True
+        Me.CheckBox2.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox2.Location = New System.Drawing.Point(103, 30)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(80, 17)
+        Me.CheckBox2.TabIndex = 3
+        Me.CheckBox2.Text = "жесткость"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(2, 16)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(71, 13)
+        Me.Label19.TabIndex = 0
+        Me.Label19.Text = "Показатели:"
+        '
+        'GroupBox8
+        '
+        Me.GroupBox8.Controls.Add(Me.TextBox18)
+        Me.GroupBox8.Controls.Add(Me.Label20)
+        Me.GroupBox8.Controls.Add(Me.TextBox27)
+        Me.GroupBox8.Controls.Add(Me.Button8)
+        Me.GroupBox8.Location = New System.Drawing.Point(0, 462)
+        Me.GroupBox8.Name = "GroupBox8"
+        Me.GroupBox8.Size = New System.Drawing.Size(206, 68)
+        Me.GroupBox8.TabIndex = 29
+        Me.GroupBox8.TabStop = False
+        '
+        'TextBox18
+        '
+        Me.TextBox18.Location = New System.Drawing.Point(123, 42)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.Size = New System.Drawing.Size(76, 20)
+        Me.TextBox18.TabIndex = 24
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(7, 45)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(32, 13)
+        Me.Label20.TabIndex = 23
+        Me.Label20.Text = "ИЗВ:"
+        '
+        'TextBox27
+        '
+        Me.TextBox27.Location = New System.Drawing.Point(45, 42)
+        Me.TextBox27.Name = "TextBox27"
+        Me.TextBox27.Size = New System.Drawing.Size(71, 20)
+        Me.TextBox27.TabIndex = 22
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(126, 13)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(75, 23)
+        Me.Button8.TabIndex = 21
+        Me.Button8.Text = "Подсчет"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'GroupBox9
+        '
+        Me.GroupBox9.Controls.Add(Me.ComboBox6)
+        Me.GroupBox9.Controls.Add(Me.Label27)
+        Me.GroupBox9.Controls.Add(Me.Label26)
+        Me.GroupBox9.Controls.Add(Me.TextBox30)
+        Me.GroupBox9.Controls.Add(Me.Label25)
+        Me.GroupBox9.Controls.Add(Me.Button14)
+        Me.GroupBox9.Controls.Add(Me.ComboBox5)
+        Me.GroupBox9.Controls.Add(Me.Label22)
+        Me.GroupBox9.Controls.Add(Me.TextBox28)
+        Me.GroupBox9.Controls.Add(Me.Label21)
+        Me.GroupBox9.Location = New System.Drawing.Point(456, 30)
+        Me.GroupBox9.Name = "GroupBox9"
+        Me.GroupBox9.Size = New System.Drawing.Size(178, 267)
+        Me.GroupBox9.TabIndex = 30
+        Me.GroupBox9.TabStop = False
+        Me.GroupBox9.Text = "Электрическое сопротивление"
+        '
+        'ComboBox6
+        '
+        Me.ComboBox6.FormattingEnabled = True
+        Me.ComboBox6.Items.AddRange(New Object() {"1"})
+        Me.ComboBox6.Location = New System.Drawing.Point(6, 163)
+        Me.ComboBox6.Name = "ComboBox6"
+        Me.ComboBox6.Size = New System.Drawing.Size(100, 21)
+        Me.ComboBox6.TabIndex = 12
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(3, 134)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(160, 26)
+        Me.Label27.TabIndex = 11
+        Me.Label27.Text = "Введите длину (см) электрода" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "гидротестера"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(109, 247)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(23, 13)
+        Me.Label26.TabIndex = 10
+        Me.Label26.Text = "Ом"
+        '
+        'TextBox30
+        '
+        Me.TextBox30.Location = New System.Drawing.Point(3, 244)
+        Me.TextBox30.Name = "TextBox30"
+        Me.TextBox30.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox30.TabIndex = 9
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(3, 228)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(105, 13)
+        Me.Label25.TabIndex = 8
+        Me.Label25.Text = "Сопротивление (R):"
+        '
+        'Button14
+        '
+        Me.Button14.Location = New System.Drawing.Point(6, 190)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(75, 23)
+        Me.Button14.TabIndex = 4
+        Me.Button14.Text = "Подсчет"
+        Me.Button14.UseVisualStyleBackColor = True
+        '
+        'ComboBox5
+        '
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Items.AddRange(New Object() {"1"})
+        Me.ComboBox5.Location = New System.Drawing.Point(6, 110)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(100, 21)
+        Me.ComboBox5.TabIndex = 3
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(3, 81)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(151, 26)
+        Me.Label22.TabIndex = 2
+        Me.Label22.Text = "Введите диаметр электрода" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "гидротестера (мм)"
+        '
+        'TextBox28
+        '
+        Me.TextBox28.Location = New System.Drawing.Point(6, 59)
+        Me.TextBox28.Name = "TextBox28"
+        Me.TextBox28.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox28.TabIndex = 1
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(6, 17)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(113, 39)
+        Me.Label21.TabIndex = 0
+        Me.Label21.Text = "Введите удельную" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "электропроводность" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "воды в мкСм/см"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(452, 411)
+        Me.ClientSize = New System.Drawing.Size(629, 564)
+        Me.Controls.Add(Me.GroupBox9)
+        Me.Controls.Add(Me.GroupBox8)
+        Me.Controls.Add(Me.GroupBox7)
+        Me.Controls.Add(Me.StatusStrip1)
+        Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.groupBox1)
         Me.Controls.Add(Me.menuStrip1)
         Me.Controls.Add(Me.groupBox5)
@@ -820,6 +1374,17 @@ Partial Class Form1
         Me.groupBox2.PerformLayout()
         Me.groupBox3.ResumeLayout(False)
         Me.groupBox3.PerformLayout()
+        Me.GroupBox6.ResumeLayout(False)
+        Me.GroupBox6.PerformLayout()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
+        Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox7.PerformLayout()
+        Me.GroupBox8.ResumeLayout(False)
+        Me.GroupBox8.PerformLayout()
+        Me.GroupBox9.ResumeLayout(False)
+        Me.GroupBox9.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -905,5 +1470,56 @@ Partial Class Form1
     Private WithEvents label8 As System.Windows.Forms.Label
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents GroupBox6 As System.Windows.Forms.GroupBox
+    Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents NumericUpDown1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
+    Private WithEvents TextBox16 As System.Windows.Forms.TextBox
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Private WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents СтеретьФайлАнализаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents ToolStripProgressBar1 As System.Windows.Forms.ToolStripProgressBar
+    Friend WithEvents Timer2 As System.Windows.Forms.Timer
+    Friend WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents ToolStripStatusLabel2 As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents GroupBox7 As System.Windows.Forms.GroupBox
+    Friend WithEvents TextBox20 As System.Windows.Forms.TextBox
+    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
+    Friend WithEvents TextBox19 As System.Windows.Forms.TextBox
+    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents TextBox25 As System.Windows.Forms.TextBox
+    Friend WithEvents CheckBox8 As System.Windows.Forms.CheckBox
+    Friend WithEvents TextBox24 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox23 As System.Windows.Forms.TextBox
+    Friend WithEvents CheckBox7 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox6 As System.Windows.Forms.CheckBox
+    Friend WithEvents TextBox22 As System.Windows.Forms.TextBox
+    Friend WithEvents CheckBox5 As System.Windows.Forms.CheckBox
+    Friend WithEvents TextBox21 As System.Windows.Forms.TextBox
+    Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
+    Friend WithEvents GroupBox8 As System.Windows.Forms.GroupBox
+    Friend WithEvents TextBox26 As System.Windows.Forms.TextBox
+    Friend WithEvents CheckBox9 As System.Windows.Forms.CheckBox
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents TextBox27 As System.Windows.Forms.TextBox
+    Private WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents TextBox18 As System.Windows.Forms.TextBox
+    Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel4 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel5 As System.Windows.Forms.LinkLabel
+    Friend WithEvents GroupBox9 As System.Windows.Forms.GroupBox
+    Friend WithEvents ComboBox5 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents TextBox28 As System.Windows.Forms.TextBox
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents Label26 As System.Windows.Forms.Label
+    Friend WithEvents TextBox30 As System.Windows.Forms.TextBox
+    Friend WithEvents Label25 As System.Windows.Forms.Label
+    Friend WithEvents Button14 As System.Windows.Forms.Button
+    Friend WithEvents ComboBox6 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label27 As System.Windows.Forms.Label
 
 End Class

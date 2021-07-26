@@ -120,6 +120,14 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>189, 2</value>
   </metadata>
+  <data name="LinkLabel1.ToolTip" xml:space="preserve">
+    <value>Условно, при нормальном атмосферном давлении
+760 мм рт. столба и при парицальном давлении
+кислорода в 0,209 атм.
+Поверхностные воды имеют наиб. содерж. О2
+в холодное время. Содержание кислорода в 
+поверхностных водах может колебаться от 14 до 10 мг/л</value>
+  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>265, 4</value>
   </metadata>
@@ -167,6 +175,23 @@
         RN2GH4FJKyiH6ejObHVwrtazgMDIiR5hR/PfHcQu+1UwDU4WXO+0MBg+auIY7aK2AxKUw+JpH86stXCu
         1CG0/Q3KqV/2I7hvVAt4QGUwtUiCY0uNRkDd3LoH1IJEaI7boo+H7MGDdhYcWRr4OJX7pWjgyqK/8Hyj
         EU5bR/UXuXS6L1lAZyNbBs3FAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="СтеретьФайлАнализаToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABYAAAAYCAYAAAD+vg1LAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTFH80I3AAACgUlEQVRIS2MY
+        BcMIvGwuMnzZVZ3zcmZvCFQIL3g/uYcJiBN3FuXmrMpMVYUKo4ILRanGT5uLl7zrq///flrnrc+dVRF3
+        OuuAuJ4HqgQOfkzuEP/U2xRxOT8l8u2EzvlAg5cDDbaCSqMCoME5d1srb72d0v7/a3fN/y8N+f8fV+f9
+        v5McFHcz1EkIqozhq6uu1Ju0sJLHdcXfLuUl7wBiYagUbnBw6sS4sz0t556Xpd18lxb0/2OA5f/7Pmb/
+        b7obpV+N9Te84m5u+NhGrf6uu/GnzX7Om6DaiAf70mIMDyaGPnpsIvnouSbX75vm8v+vhrn/v+xi8v+E
+        vtyX3R7WK6BKyQcXdURu31Dh+X9NjvX/OSO5/yc9reZBpSgDB0wVb5/TFPp/W4P3/3V7zf9nQ1wpM/iy
+        haIYEN+5bS73e1+w6/8dCaH/r/oAw9zL5Mvh/NTlUGWkgQtm8roXTWUv3TAQ/bfL3+n/5siAjC3p8UYn
+        suJnXI3y+v/UUXMvVCnx4K6Pif1tF+2TVw3F/x+w1v6/2d81fnV0KDi5HaooVDqRFNZ9Jtjl7RUH7YVg
+        DcSAS8khPlcDbY9ct5D7f15f4v0Oe+PY7Y6mKBkEmGKUToS6tVz0svi8p6l6MRALQqVwgxuhjqU3vYz/
+        XzWT/X/QVucZELNBpVDAZQ9TmfO+to1HYoN+AbEUVBg7eFZd6PUoMWDXPW/T/zdcDf6fig96BsRYDQaB
+        Y3FhykD8C4jxG3yvMn/yo+yY/w8DbP7fcDN6fqsssxWImaHSGOBQdYUIEE8EYn6oEHZwpSIv8X56+Pn7
+        wfb/z7oYHocKUwc8jnAPuxnltftYQtAkqNAooAQwMAAAmPEdPyZkEhwAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="файлToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -2036,6 +2061,12 @@
         AAA=
 </value>
   </data>
+  <metadata name="StatusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>380, 4</value>
+  </metadata>
+  <metadata name="Timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>497, 4</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>30</value>
   </metadata>

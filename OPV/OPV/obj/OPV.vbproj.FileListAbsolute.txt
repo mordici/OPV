@@ -1,0 +1,33 @@
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\OPV\OPV\obj\Debug\OPV.exe
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\OPV\OPV\obj\Debug\OPV.xml
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\OPV\OPV\obj\Debug\OPV.pdb
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\OPV\OPV\bin\Debug\OPV.exe
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\OPV\OPV\bin\Debug\OPV.pdb
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\OPV\OPV\bin\Debug\OPV.xml
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\OPV\OPV\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\OPV\OPV\obj\Debug\OPV.Form1.resources
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\OPV\OPV\obj\Debug\OPV.Resources.resources
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\OPV\OPV\obj\Debug\OPV.vbproj.GenerateResource.Cache
+G:\Projects\OPV\OPV\obj\Debug\OPV.exe
+G:\Projects\OPV\OPV\obj\Debug\OPV.xml
+G:\Projects\OPV\OPV\obj\Debug\OPV.pdb
+D:\Projects\OPV\OPV\obj\Debug\OPV.exe
+D:\Projects\OPV\OPV\obj\Debug\OPV.xml
+D:\Projects\OPV\OPV\obj\Debug\OPV.pdb
+D:\Projects\OPV\OPV\bin\Debug\OPV.exe
+D:\Projects\OPV\OPV\bin\Debug\OPV.pdb
+D:\Projects\OPV\OPV\bin\Debug\OPV.xml
+D:\Projects\OPV\OPV\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\OPV\OPV\obj\Debug\OPV.Form1.resources
+D:\Projects\OPV\OPV\obj\Debug\OPV.Resources.resources
+D:\Projects\OPV\OPV\obj\Debug\OPV.vbproj.GenerateResource.Cache
+D:\с виндовс экспи\Projects\OPV\OPV\obj\Debug\OPV.exe
+D:\с виндовс экспи\Projects\OPV\OPV\obj\Debug\OPV.xml
+D:\с виндовс экспи\Projects\OPV\OPV\obj\Debug\OPV.pdb
+D:\с виндовс экспи\Projects\OPV\OPV\bin\Debug\OPV.exe
+D:\с виндовс экспи\Projects\OPV\OPV\bin\Debug\OPV.pdb
+D:\с виндовс экспи\Projects\OPV\OPV\bin\Debug\OPV.xml
+D:\с виндовс экспи\Projects\OPV\OPV\obj\Debug\ResolveAssemblyReference.cache
+D:\с виндовс экспи\Projects\OPV\OPV\obj\Debug\OPV.Form1.resources
+D:\с виндовс экспи\Projects\OPV\OPV\obj\Debug\OPV.Resources.resources
+D:\с виндовс экспи\Projects\OPV\OPV\obj\Debug\OPV.vbproj.GenerateResource.Cache
