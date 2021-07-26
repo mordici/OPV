@@ -1,0 +1,30 @@
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\info\info\obj\Debug\info.exe
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\info\info\obj\Debug\info.xml
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\info\info\obj\Debug\info.pdb
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\info\info\bin\Debug\info.exe
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\info\info\bin\Debug\info.pdb
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\info\info\bin\Debug\info.xml
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\info\info\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\info\info\obj\Debug\info.Form1.resources
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\info\info\obj\Debug\info.Resources.resources
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2005\Projects\info\info\obj\Debug\info.vbproj.GenerateResource.Cache
+D:\с виндовс экспи\Projects\info\info\obj\Debug\info.exe
+D:\с виндовс экспи\Projects\info\info\obj\Debug\info.xml
+D:\с виндовс экспи\Projects\info\info\obj\Debug\info.pdb
+D:\с виндовс экспи\Projects\info\info\bin\Debug\info.exe
+D:\с виндовс экспи\Projects\info\info\bin\Debug\info.pdb
+D:\с виндовс экспи\Projects\info\info\bin\Debug\info.xml
+D:\с виндовс экспи\Projects\info\info\obj\Debug\ResolveAssemblyReference.cache
+D:\с виндовс экспи\Projects\info\info\obj\Debug\info.Form1.resources
+D:\с виндовс экспи\Projects\info\info\obj\Debug\info.Resources.resources
+D:\с виндовс экспи\Projects\info\info\obj\Debug\info.vbproj.GenerateResource.Cache
+D:\Projects\info\info\obj\Debug\info.exe
+D:\Projects\info\info\obj\Debug\info.xml
+D:\Projects\info\info\obj\Debug\info.pdb
+D:\Projects\info\info\bin\Debug\info.exe
+D:\Projects\info\info\bin\Debug\info.pdb
+D:\Projects\info\info\bin\Debug\info.xml
+D:\Projects\info\info\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\info\info\obj\Debug\info.Form1.resources
+D:\Projects\info\info\obj\Debug\info.Resources.resources
+D:\Projects\info\info\obj\Debug\info.vbproj.GenerateResource.Cache
